@@ -8,7 +8,8 @@ app.get("/", function (req, res) {
 
 //about
 app.post("/about", function (req, res) {
-    res.send("About Page"); // Send the response directly
+   res.send("About Page"); // Send the response directly
+  //res.json({message:"About Page"})
 });
 
 //Contact 
@@ -21,6 +22,6 @@ app.delete("/terms", function (req, res) {
     res.send("Term page"); // Send the response directly
 });
 
-app.listen(8000, function () {
-    console.log("Server running successfully on port 8000");
+app.listen(7000, function () {
+    console.log("Server running successfully on port 7000");
 });
