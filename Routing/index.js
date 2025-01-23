@@ -7,17 +7,17 @@ app.get("/", function (req, res) {
 });
 
 //about
-app.get("/about", function (req, res) {
+app.post("/about", function (req, res) {
     res.send("About Page"); // Send the response directly
 });
 
 //Contact 
-app.get("/contact", function (req, res) {
+app.put("/contact", function (req, res) {
     res.send("Contact Page"); // Send the response directly
 });
 
 //Terms
-app.get("/terms", function (req, res) {
+app.delete("/terms", function (req, res) {
     res.send("Term page"); // Send the response directly
 });
 
